@@ -155,7 +155,6 @@ class WCMNL {
 	}
 
 	public function save_account_details_required_fields( $fields ) {
-		print_r( $_POST );
 		$account_phone = isset( $_POST['account_phone'] ) ? sanitize_text_field( $_POST['account_phone'] ) : '';
 		$account_email = sanitize_email( $_POST['account_email'] );
 		if( ! empty( $account_phone ) ) {
